@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Informaçoes Pessoais</h1>
+    <form autocomplete="on" method="POST">
+        <fieldset>
+            <legend>Cadastro do cliente</legend>
+            <label>Nome:</label>   
+            <input style="width:400px;" type="text" name="texto"  >
+            <br>
+            <br>
+            <label>Sexo:  </label>
+            <input type="radio">Masculino
+            <input type="radio">Feminino
+            <br>
+            <br>
+            <label>Idade:  </label>
+            <input  style="width:70px;"type="number" min="0" name="Numero">
+            <br>
+            <br> 
+            <label>Endereço: </label>
+            <input style="width:600px;" type="text" placeholder="Digite o endereço">
+            <br>
+            <br> 
+            <label>Cidade:  </label>
+            <input style="width:290px;" type="text" placeholder="Digite a cidade">
+            <br>
+            <br>
+            <form> 
+                <label>Estado:</label>
+                    <select name="select" style="width: 110px;">
+                        <option value="PA" >PA</option>
+                        <option value="ES">ES</option>
+                        <option value="UF">UF</option>
+                        <option value="RJ">RJ</option>
+                        <option value="DF">DF</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="AC">AC</option>
+                        <option value="RR">RR</option>
+                        <option value="SP">SP</option>
+                    </select>
+            </form>
+            <br>
+            <br> 
+            <label>CEP: </label>
+            <input type="text"  placeholder="XXXXX-XXX">
+            <br>
+            <br> 
+            <label>Tel/Res:</label>
+            <input type="tel"placeholder="(99) 99999-9999">
+            <br>
+            <br> 
+            <label>Tel/Cel:</label>
+            <input type="tel" placeholder="(99) 99999-9999">
+            <br>
+            <br> 
+            <label>Email:</label>
+            <input type="email" placeholder="Digite o endereço de email">
+            <br>
+            <button type="submit" formaction="http://localhost:3000/usuarios" onclick="alert('Formulario enviado')" style="margin-top: 35px">Enviar formulário</button>
+        </fieldset>
+    </form>
+</body>
+</html>

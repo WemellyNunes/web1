@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos e Agendamentos</title>
+</head>
+<body>
+    <header>
+        <h2>Agende seu serviço entrando em contato</h2>
+        <a href="#b3" id="b4"><button style="width: 160px; height: 20px;">Ir para o final da pagina</button></a>
+    </header>
+    <br>
+    <form>
+        <label">Nome e sobrenome</label><br>
+        <input style="width: 350px;" type="name">
+        <br>
+        <br>
+        <label>Email</label><br>
+        <input style="width: 350px;" type="email" placeholder="  seuemail@dominio.com">
+        <br>
+        <br>
+        <label style="width: 350px;">Telefone</label><br>
+        <input style="width: 350px;" type="tel" placeholder="  (XX)XXXXX-XXXX">
+        
+        <br>
+        <br>
+        <label>Mensagem</label><br>
+        <textarea name="message" rows="14" cols="45" placeholder="Escreva uma mensagem"></textarea>
+
+        <form>
+            <fieldset style="width: 324px;">
+                <legend >Como Prefere o noss contato?</legend>
+                    <ul><input type="checkbox">Email</ul><!-- type igual a checkbox, com o intuito da pessoa ter a chance de desmarcar a opção, caso ela marcar errado -->
+                    <ul><input type="checkbox">Tefelone</ul>
+                    <ul><input type="checkbox">WhatsApp</ul>
+            </fieldset>
+        </form>
+        <form>
+            <fieldset style="width: 324px;">
+                <legend >Qual horário prefere ser atendido?</legend>
+                <select name="select" style="width: 110px;">
+                    <option value="Manhã" >Manhã</option>
+                    <option value="Tarde">Tarde</option>
+                    <option value="Noite">Noite</option>
+                </select>
+            </fieldset>
+        </form>
+        <br>
+        <input type="checkbox">Gostaria de receber nossas novidades por email?<br>
+        <br>
+        <button type="submit" onclick="alert('Formulario enviado')">   Enviar formulário   </button>
+
+        <br>
+        <table>
+            <caption>Horarios de atendimentos</caption>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Terça</td>
+                    <td>10h ~ 16h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>11h ~ 21h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>9h ~ 19h</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td>12h ~ 18h</td>
+                </tr>
+            </tbody>
+            <style>
+                table{
+                    border-collapse: collapse;
+                    border: solid 1px #000000;
+                    width: 210px;
+                }
+                caption{
+                    background-color: #2a2828;
+                    color: #fff;
+                    padding: 9px;
+                }
+                th,td{
+                    padding: 4px;
+                    border: solid 3px #000000;
+                }
+                thead tr{
+                    border-bottom: solid 5px rgb(168, 87, 87);
+                    background-color: #2a2828;
+                    color: #fff;
+                }
+            </style>
+        </table>
+    </form>
+    <br>
+    <a href="#b4" id="b3"><button>voltar para o inicio da pagina</button></a>
+    <hr>
+    <footer>
+        <a href="home.html">Voltar para Home</a>
+    </footer>
+</body>
+</html>
