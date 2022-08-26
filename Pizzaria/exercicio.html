@@ -2,108 +2,208 @@
 <head>
 	<title>Restaurante / Pizzaria</title>
 	<style>
-		body{
-			background: rgb(202, 201, 201);
-			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-		}
-		.topnav{
-			display: flex;
-			flex-direction: row;
-			width: 100%;
-			gap: 15px;
-			background: #0c0b0b;
+		@media (min-width:1340px) and (max-width: 1858px){
+			body{
+				background: rgb(202, 201, 201);
+				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+				width: 100%;
+			}
+			.topnav{
+				display: flex;
+				flex-direction: row;
+				justify-content: left;				
+				width: 70%;
+				gap:6%;
+				margin-left: 15%;
+				background: #0c0b0b;
+				
+			}
+			a{
+				text-decoration: none;
+				color: #fff;
+				padding: 15px;
+				font-size: 20px;
+				margin-left: 20px ;
+			}
+			img{
+				width: 70%;
+				height: 540px;
+				margin-left: 15%;
+				margin-top:0%;
+				align-items: center;
+			}
+			.titulo-principal{
+				position: absolute;
+				font-size: 120px;
+				margin-top: -28%;
+				margin-left: 33%;
+				color: #fff;
 			
+			}
+			.card{
+				display: flex;
+				flex-direction: column;
+				margin-top: -8.5%;;
+				background: #fff;
+				width: 69%;
+				margin-left: 15%;
+				padding: 0.45%;
+			}
+			h1{
+				margin-left: 2%;
+				margin-top: 12%;
+			}
+			.listas{
+				display: flex;
+				flex-direction: column;
+				margin-top: -1%;
 			
-		}
-		a{
-			text-decoration: none;
-			color: #fff;
-			padding: 15px;
-			font-size: 20px;
-			margin-left: 20px ;
-		}
-		img{
-			width: 70%;
-			height: 540px;
-			margin-left: 15%;
-			margin-top:0%;
-			align-items: center;
-		}
-		.titulo-principal{
-			position: absolute;
-			font-size: 120px;
-			margin-top: -20%;
-			margin-left: 35%;
-			color: #fff;
-		
-		}
-		.card{
-			margin-top: 0.5%;;
-			background: #fff;
-			width: 69%;
-			margin-left: 15%;
-			padding: 0.45%;
-		}
-		h1{
-			margin-left: 10px;
-		}
-		.listas{
-			display: flex;
-			flex-direction: column;
-		
-		}
-		.preco{
-			float:right;
-			margin-left: 30%;
-			background: #888787;
-			color:#fff;
+			}
+			.preco{
+				position:absolute;
+				display: flex;
+				flex-direction: column;
+				float:right;
+				margin-left: 60%;
+				background: #888787;
+				color:#fff;
+				margin-top: -1%;
+				padding: 5px;
+			}
+			ul{
+				list-style-type: none;
+			}
+			.footer{
+				background: #a3a1a1;
+				width: 69.6%;
+				margin-left: 15%;
+				padding: 3px;
+				margin-top: 0.5%;
+				text-align: center;
+			}
+	     }
+		@media (min-width:697px) and (max-width:1339px){
+			body{
+				background: rgb(238, 209, 209);
+				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+				width: 100%;
+			}
+			.topnav{
+				display: flex;
+				flex-direction: row;
+				justify-content: left;				
+				width: 70%;
+				gap:6%;
+				margin-left: 15%;
+				background: #0c0b0b;
+				width: 90%;
+			}
+			a{
+				text-decoration: none;
+				color: #fff;
+				padding: 15px;
+				font-size: 20px;
+				margin-left: 20px ;
+			}
+			img{
+				width: 70%;
+				height: 540px;
+				margin-left: 15%;
+				margin-top:0%;
+				align-items: center;
+			}
+			.titulo-principal{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				position: absolute;
+				font-size: 110px;
+				margin-top: -38%;
+				margin-left: 32%;
+				color: #fff;
 			
-			padding: 5px;
-		}
-		ul{
-			list-style-type: none;
-		}
-		.footer{
-			background: #a3a1a1;
-			width: 69.6%;
-			margin-left: 15%;
-			padding: 3px;
-			margin-top: 0.5%;
-			text-align: center;
+			}
+			.card{
+				display: flex;
+				flex-direction: column;
+				margin-top: -8.5%;;
+				background: #fff;
+				width: 69%;
+				margin-left: 15%;
+				padding: 0.45%;
+			}
+			h1{
+				margin-left: 2%;
+				margin-top: 12%;
+			}
+			.listas{
+				display: flex;
+				flex-direction: column;
+				margin-top: -1%;
+
+						
+			}
+			p{
+				width: 70%;
+			}
+			.preco{
+				position: fixed;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				float:right;
+				margin-left: 60%;
+				background: #888787;
+				color:#fff;
+				margin-top: -3%;
+				padding: 5px;
+			}
+			ul{
+				list-style-type: none;
+			}
+			.footer{
+				background: #a3a1a1;
+				width: 69.6%;
+				margin-left: 15%;
+				padding: 3px;
+				margin-top: 0.5%;
+				text-align: center;
+			}
+	     
 		}
 	</style>
 </head>
 <body>
 
-<div class="topnav">
-  <a href="#">Inicio</a>
-  <a href="#cardapio">Cardápio</a>
-  <a href="#">Contato</a>
-</div>
-	<div>
-		<img src="./imagens/pizza.jpg" >
+	<div class="topnav">
+	<a href="#">Inicio</a>
+	<a href="#cardapio">Cardápio</a>
+	<a href="#">Contato</a>
 	</div>
-<div class="header"></div>
-<div class="titulo-principal">PIZZARIA</div>
+		<div>
+			<img src="imagens/pizza.jpg" >
+		</div>
+	<div class="header"></div>
+	<div class="titulo-principal">PIZZARIA</div>
 
-<div class="row" id="cardapio">
-	<div class="card">
-		<h1>Pizzas</h1>
-		<ul class="listas">
-			<li> <p>Portuguesa - Mussarela, presunto, ovo de codorna, azeitona preta, cebola e pimentaão verde.<span class="preco">R$ 29,90</span></p> </li>
-			<li> <p>4 Queijos - Mussarela, requeijão, gorgonzola e parmesão ralado.<span class="preco">R$ 29,90</span></p> </li>
-			<li> <p>Bauru - Mussarela, presunto, requeijão e tomate.<span class="preco">R$ 29,90</span></p> </li>
-			<li> <p>Frango Grelhado - Mussarela, frango, requeijão, tomate, azeitona preta e manjericão.<span class="preco">R$ 29,90</span></p> </li>
-		</ul>
+	<div class="row" id="cardapio">
+		<div class="card">
+			<h1>Pizzas</h1>
+			<ul class="listas">
+				<li> <p>Portuguesa - Mussarela, presunto, ovo de codorna, azeitona preta, cebola e pimentaão verde.<span class="preco">R$ 29,90</span></p> </li>
+				<li> <p>4 Queijos - Mussarela, requeijão, gorgonzola e parmesão ralado.<span class="preco">R$ 29,90</span></p> </li>
+				<li> <p>Bauru - Mussarela, presunto, requeijão e tomate.<span class="preco">R$ 29,90</span></p> </li>
+				<li> <p>Frango Grelhado - Mussarela, frango, requeijão, tomate, azeitona preta e manjericão.<span class="preco">R$ 29,90</span></p> </li>
+			</ul>
+		</div>
 	</div>
-</div>
 
-<div class="footer">
-  <h2>Aberto</h2>
-  <p>
-	Seg - Sex das 17 às 23 horas.
-  </p>
-</div>
+	<div class="footer">
+	<h2>Aberto</h2>
+	<p>
+		Seg - Sex das 17 às 23 horas.
+	</p>
+	</div>
 
 </body>
 </html>
