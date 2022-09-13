@@ -91,11 +91,11 @@ body {
 }
 
 .conteudoPrincipal-cursos-link:nth-child(even) a:before {
-	background: url(/web1/atv7/imges/background1.svg) no-repeat;	
+	background: url(./atv7/imges/background1.svg) no-repeat;	
 }
 
 .conteudoPrincipal-cursos-link:nth-child(odd) a:before {
-	background: url(/web1/atv7/imges/background2.svg) no-repeat;
+	background: url(./atv7/imges/background2.svg) no-repeat;
 }
 
 
