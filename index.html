@@ -2,134 +2,146 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pages</title>
-    <style>
-        body {
-            margin-left: 3vh;
-            margin-right: 3vh;
-            background: #e9e0eedc;
-            font-family: sans-serif;
-        }
-        h2 {
-            color: #2c0b3bdc;
-            background-image: linear-gradient(to right top, 
-            #a6e0eb04, #7117d841, #69208b1f);
-            padding: 10px;
-            border: solid 0;
-            border-radius: 2px;
-            letter-spacing: 1.5px;
-            font-weight: normal;
-        }
-        a {
-            color: black;
-            background-color: #a774e296;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-        a:link {
-            text-decoration: none;
-        }
-        a:hover {
-            background-color: #8e35b883;
-        }
-        hr {
-            border-top: 1px solid #6a208bdc;
-        }
-        .discentes {
-            background: none;
-            color: black;
-            margin-top: 0;
-            letter-spacing: normal;
-            padding: 0;
-            font-size: 2.5vh;
-        }
-        h1 {
-            margin-bottom: 1px;
-            font-size: 3.5vh;
-        }
-        @media screen and (min-width: 450px) and (max-width: 760px){
-            .atv1 {
-                display: grid;
-                grid-template-columns: 0.5fr 0.5fr;
-                column-gap: 0.9rem;
-            }          
-        }
-        @media screen and (min-width: 360px) and (max-width: 740px){
-            .atv1 {
-                display: grid;
-                grid-template-columns: 0.5fr 0.5fr ;
-                column-gap: 0.9rem;
-            } 
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+	<style>
+		table {
+			border-collapse: collapse;
+
+		}
+		td {
+			border-bottom: 1px solid plum;
+			text-align: center;
+		}
+		th {
+			text-align: center;
+			background-color: plum;
+		}
+		td:hover {
+			background-color: rgb(248, 229, 248);;
+		}
+		.coluna-atv {
+			background-color: rgb(248, 229, 248);
+		}
+		tr {
+			border-bottom: 1px solid rgb(168, 168, 168);	
+		}
+		a {
+			color: rgb(119, 30, 119);
+			font-weight: bold;
+		}
+		caption {
+			font-size: 20px;
+			font-weight: bold;
+			background-color: plum;
+		}
+	</style>
 </head>
 <body>
-    <header>
-        <h1>Atividades de Desenvolvimento para Sistemas Web I</h1>
-        <h2 class="discentes">Discentes: André Joás - 202040602004 e Wemelly Nunes - 202040602043</h2>
-        <hr>
-    </header>
-    <h2>Atividade 1</h2>
-    <div class="atv1">
-        <a href="./Atv1/Q1.html/curriculo.html">Q1 - curriculo |</a>
-        <a href="./Atv1/Q2.html/tabela.html">Q2 - Tabela |</a>
-        <a href="./Atv1/Q3.html/formulario.html">Q3 - Formulario |</a>
-        <a href="./Atv1/Q4.html/miniwikipedia.html">Q4 - miniwikipedia |</a>
-        <a href="./Atv1/Q5.html/home.html">Q5 - Barbearia |</a>
-        <br>
-        <hr>
+    <div class="container">
+       <table>
+		<caption>Desenvolvimento para sistemas Web I</caption>
+            <thead>
+                <tr>
+                    <th>Atividades</th>
+                    <th>Questões</th>
+                    <th>Duplas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="coluna-atv" rowspan="5">Atv1</td>
+                    <td><a href="./Atv1/Q1.html/curriculo.html">Q1 - curriculo</a></td>
+					<td rowspan="5">Andre e Wemelly</td>
+                </tr>
+                <tr>
+					<td><a href="./Atv1/Q2.html/tabela.html">Q2 - Tabela</a></td>
+                </tr>
+				<tr>
+					<td><a href="./Atv1/Q3.html/formulario.html">Q3 - Formulario</a></td>
+                </tr>
+				<tr>
+					<td><a href="./Atv1/Q4.html/miniwikipedia.html">Q4 - miniwikipedia</a></td>
+                </tr>
+				<tr>
+					<td><a href="./Atv1/Q5.html/home.html">Q5 - Barbearia</a></td>
+                </tr>
+				<tr>
+					<td class="coluna-atv">Atv2</td>
+					<td><a href="./Atv2/atividadeSeletores.html">Seletores</a></td>
+					<td>Andre e Wemelly</td>
+				</tr>
+				<tr>
+					<td class="coluna-atv">Atv3</td>
+					<td><a href="./Atv3.css/pag.html">Pagina html</a></td>
+					<td>Andre e Wemelly</td>
+				</tr>
+				<tr>
+					<td class="coluna-atv" rowspan="2">Atv4</td>
+					<td><a href="./Loja/exercicio.html">Loja</a></td>
+					<td rowspan="2">Andre e Wemelly</td>
+				</tr>
+				<tr>
+					<td><a href="./Pizzaria/exercicio.html">Pizzaria</a></td>
+				</tr>
+				<tr>
+					<td class="coluna-atv" rowspan="2">Atv5</td>
+					<td><a href="./Loja/exercicio.html">Loja - responsiva</a></td>
+					<td rowspan="2">Andre e Wemelly</td>
+				</tr>
+				<tr>
+					<td><a href="./Pizzaria/exercicio.html">Pizzaria - responsiva</a></td>
+				</tr>
+				<tr>
+					<td class="coluna-atv">Atv6</td>
+					<td><a href="./atv6/Obra-Artistica.html">Obra Artistica</a></td>
+					<td>Andre e Wemelly</td>
+				</tr>
+				<tr>
+					<td class="coluna-atv">Atv7</td>
+					<td><a href="./atv7/alurinha.html">Alurinha</a></td>
+					<td>Andre e Wemelly</td>
+				</tr>
+				<tr>
+					<td class="coluna-atv" rowspan="2">Atv8</td>
+					<td><a href="./atv8.html">Calculadora 1</a></td>
+					<td rowspan="2">Andre e Wemelly</td>
+				</tr>
+				<tr>
+					<td ><a href="./atv8pt2.html">Calculadora 2</a></td>
+				</tr>
+				<tr>
+					<td class="coluna-atv" >Atv9</td>
+					<td><a href="./game-store/gamestore.html">Game Store</a></td>
+					<td>Andre e Wemelly</td>
+				</tr>
+				<tr>
+                    <td class="coluna-atv" rowspan="6">Atv10</td>
+                    <td><a href="./atvJS/questao1.html">Questão 1</a></td>
+					<td rowspan="6">Diogo e Wemelly</td>
+                </tr>
+                <tr>
+					<td><a href="./atvJS/questao2.html">Questão 2</a></td>
+                </tr>
+				<tr>
+					<td><a href="./atvJS/questao3.html">Questão 3</a></td>
+                </tr>
+				<tr>
+					<td><a href="./atvJS/questao4.html">Questão 4</a></td>
+                </tr>
+				<tr>
+					<td><a href="./atvJS/questao5.html">Questão 5</a></td>
+                </tr>
+				<tr>
+					<td><a href=./atvJS/questao6.html>Questão 6</a></td>
+                </tr>
+
+
+            </tbody>
+        </table>
     </div>
-
-    <h2>Atividade 2</h2>
-    <a href="./Atv2/atividadeSeletores.html">Seletores</a>
-    <br>
-    <hr>
-
-    <h2>Atividade 3</h2>
-    <a href="./Atv3.css/pag.html">Pagina html</a>
-    <br>
-    <hr>
-    
-    <h2>Atividade 4</h2>
-    <a href="./Loja/exercicio.html">Loja</a>
-    <a href="./Pizzaria/exercicio.html">Pizzaria</a>
-    <hr>
-    
-    <h2>Atividade 5</h2>
-    <a href="./Loja/exercicio.html">Loja - responsiva</a>
-    <a href="./Pizzaria/exercicio.html">Pizzaria - responsiva</a>
-    <hr>
-    
-    <h2>Atividade 6</h2>
-    <a href="./atv6/Obra-Artistica.html">Obra Artistica</a>
-    <hr>
-    
-    <h2>Atividade 7</h2>
-    <a href="./atv7/alurinha.html">Alurinha</a>
-    
-    <h2>Atividade 8</h2>
-    <a href="./atv8.html">Calculadora 1</a>
-    <a href="./atv8pt2.html">Calculadora 2</a>
-    <hr>
-    
-    <h2>Atividade 9</h2>
-    <a href="./game-store/gamestore.html">Game Store</a>
-    <hr>
-    
-    <div class="atvJS">
-        <h2> Atividade JS - Dupla: Wemelly Nunes e Diogo Alvino</h2>
-        <a href="./atvJS/questao1.html">Questão 1 |</a>
-        <a href=./atvJS/questao2.html>Questão 2 |</a>
-        <a href=./atvJS/questao3.html>Questão 3 |</a>
-        <a href=./atvJS/questao4.html>Questão 4 |</a>
-        <a href=./atvJS/questao5.html>Questão 5 |</a>
-        <a href=./atvJS/questao6.html>Questão 6 |</a>
-        <br>
-    
-    
-    
 </body>
-</html
+</html>
 
