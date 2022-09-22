@@ -12,9 +12,12 @@
         const totalVotosBrancos = Number(prompt('Informe o total de votos brancos: '))
         const totalVotosNulos = Number(prompt('Informe o total de votos nulos: '))
         const totalVotosValidos = Number(prompt('Informe o total de votos válidos: '))
-        const percentualBranco = (totalVotosBrancos / totalEleitores) * 100
-        const percentualNulo = (totalVotosNulos / totalEleitores) * 100
-        const percentualValidos = (totalVotosValidos / totalEleitores) * 100
+        function calculaPercentual (totalVotos, totalPessoas){
+            return (totalVotos / totalPessoas) * 100
+        }
+        const percentualBranco = calculaPercentual(totalVotosBrancos, totalEleitores);
+        const percentualNulo = calculaPercentual(totalVotosNulos, totalEleitores);
+        const percentualValidos = calculaPercentual(totalVotosValidos, totalEleitores);
         alert(`Total de eleitores: ${totalEleitores}\n
         Total de votos brancos: ${totalVotosBrancos}\n
         Total votos nulos: ${totalVotosNulos}\n
