@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4</title>
+</head>
+<body>
+    <script>
+        const precoProduto = Number(prompt('Informe o preço do produto R$: '))
+        const precoProdutoDesconto = precoProduto - (precoProduto * 0.1)
+        const precoParcelado = precoProduto / 3 
+        alert(`Valor a vista com desconto de 10% R$: ${precoProdutoDesconto.toFixed(2)}\n
+        Valor das parcelas do produto em 3x R$: ${precoParcelado.toFixed(2)}`)
+    </script>
+</body>
+</html>

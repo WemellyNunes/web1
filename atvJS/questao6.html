@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+</head>
+<body>
+    <script>
+        const totalEleitores = Number(prompt('Informe o total de eleitores: '))
+        const totalVotosBrancos = Number(prompt('Informe o total de votos brancos: '))
+        const totalVotosNulos = Number(prompt('Informe o total de votos nulos: '))
+        const totalVotosValidos = Number(prompt('Informe o total de votos válidos: '))
+        const percentualBranco = (totalVotosBrancos / totalEleitores) * 100
+        const percentualNulo = (totalVotosNulos / totalEleitores) * 100
+        const percentualValidos = (totalVotosValidos / totalEleitores) * 100
+        alert(`Total de eleitores: ${totalEleitores}\n
+        Total de votos brancos: ${totalVotosBrancos}\n
+        Total votos nulos: ${totalVotosNulos}\n
+        Total votos válidos: ${totalVotosValidos}\n
+        Percentual de votos brancos: ${percentualBranco}%\n
+        Percentual de votos nulos: ${percentualNulo}%\n
+        Percentual de votos válidos: ${percentualValidos}%`)
+    </script>
+</body>
+</html>
