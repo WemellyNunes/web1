@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+</head>
+<body>
+    <script>
+        var valorPessoa = 20;
+        var peixesExtras = 12;
+
+        const quantidadePessoa = Number(prompt('Informe a quantidade de pessoas: '))
+        const quantidadePeixes = Number(prompt('Informe a quantidade de peixes: '))
+
+        if (quantidadePeixes <= quantidadePessoa && quantidadePessoa != 0 && quantidadePeixes != 0){
+            const ValorAPagar = quantidadePessoa * valorPessoa        
+            alert(`O valor a ser pago: R$ ${ValorAPagar}`)
+        }
+        if (quantidadePeixes > 0 && quantidadePessoa == 0){
+            alert("Peixe nao se captura sozinho!!")
+        }
+        if (quantidadePeixes == 0 && quantidadePessoa == 0){
+            alert("Ninguem estava presente no local!")
+        }
+        if(quantidadePeixes > quantidadePessoa && quantidadePessoa != 0){
+            const valorPeixesExtras = (quantidadePeixes - quantidadePessoa) * 12
+            const ValorAPagarPessoa = quantidadePessoa * valorPessoa
+            const ValorAPagarTotal = valorPeixesExtras + ValorAPagarPessoa 
+            alert(`O valor a ser pago com os peixes extras: R$ ${ValorAPagarTotal}`)
+        } 
+
+    </script>
+</body>
+</html>

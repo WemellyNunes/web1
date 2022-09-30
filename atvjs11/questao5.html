@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 5</title>
+</head>
+<body>
+    <script>
+        var numero = Number(prompt("Insira um numero:"))
+
+        if (numero >= 100 && numero < 1000) {
+            var unidade = numero % 10
+            var dezena = Math.floor((numero % 100) / 10)
+            var centena = Math.floor(numero / 100)
+            var resultado = (unidade + '' + dezena + "" + centena)
+            alert(` O numero  dado foi ${numero}, e é considerado centena, e o inverso dele é: ${resultado}`);}
+        else {
+            alert(`O numero não é uma centena`)}
+        
+    </script>
+</body>
+</html>

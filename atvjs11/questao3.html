@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 3</title>
+</head>
+<body>
+    <script>
+        var genero = prompt("Masculino ou Feminino?")
+
+        if (genero == 'Masculino') {
+            const altura = Number(prompt("insira a altura:"))
+            let pesoIdealM = (72 * altura) - 58
+            alert(`Por voce ser do genero ${genero}, o seu peso ideial é de ${pesoIdealM} kg`)
+        } 
+        else {
+            const altura = Number(prompt("insira a altura:"))
+            let pesoIdealF = (62 * altura) - 44
+            alert(`Por voce ser do genero ${genero}, o seu peso ideial é de ${pesoIdealF} kg`)
+        }
+    </script>
+</body>
+</html>

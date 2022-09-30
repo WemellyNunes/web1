@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 4</title>
+</head>
+<body>
+    <script>
+        const nome = prompt("insira seu nome:")
+        let compra = Number(prompt("insira o valor da compra:"))
+
+        if (compra <= 200) {
+        let desconto = (compra * 0.1)
+        let valorTotal = compra - desconto
+        alert(`O Pedido do(a) cliente ${nome}, vai receber um desconto de 10% ou seja R$ ${compra} reais, sua compra vai sair no valor de ${valorTotal}`)} 
+
+        else if (compra > 200 && compra <= 500) {
+        let desconto = (compra * 0.15)
+        let valorTotal = compra - desconto
+        alert(`O Pedido do(a) cliente ${nome}, vai receber um desconto de 15% ou seja R$ ${compra} reais, sua compra vai sair no valor de ${valorTotal}`)} 
+
+        else if (compra > 500) {
+        let desconto = (compra * 0.2)
+        let valorTotal = compra - desconto
+        alert(`O Pedido do cliente ${nome}, vai receber um desconto de 20% ou seja R$ ${compra} reais, sua compra vai sair no valor de ${valorTotal}`)}
+    </script>
+</body>
+</html>

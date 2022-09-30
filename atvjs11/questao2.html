@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2</title>
+</head>
+
+<body>
+    <script>
+        const tipoDeInvestimento = Number(prompt('Digite o numero do tipo de investimento (Tipo - 1 Poupança | Tipo - 2 Fundo de renda fixa) : '))
+
+        if (tipoDeInvestimento == 1){
+            const valorInvestido = Number(prompt('Qual valor deseja investir: '))
+            let valorCorrigidoTipo1 = valorInvestido + (valorInvestido * 0.05)
+                // pega o investimento e soma à ele o valor de 5% ....
+                //ja os 5 % se calcula pegando o valor do investimento, multiplicando por 0.05, que é a mesma coisa de 5/100 = 0.05 == 5% 
+            alert(` Por ser do tipo 1, o reajuste ficou de 5% do Valor, ou seja, do Investimento, o valor passa a ser: ${valorCorrigidoTipo1}`)
+            
+        } else if (tipoDeInvestimento == 2) {
+            const valorInvestido = Number(prompt('Qual valor deseja investir: '))
+            let valorCorrigidoTipo2 = valorInvestido + (valorInvestido * 0.10)
+            alert(` Por ser do tipo 2, o reajuste ficou de 10% do Valor, ou seja, do Investimento, o valor passa a ser: ${valorCorrigidoTipo2}`)
+        } else {
+            alert("Opçao incorreta!")
+        }
+        
+    </script>
+</body>
+
+</html>
