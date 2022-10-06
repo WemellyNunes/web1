@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        let valorTotalCompra = Number(prompt('Informe o valor total da compra: '))
+        let parcelas = 6
+        let totalParcelas = (valorTotalCompra / parcelas)
+
+        if(totalParcelas >= 20){
+            alert(`O valor da compra: R$ ${valorTotalCompra.toFixed(2)}\n 
+            Você pode parcelar em até ${parcelas} vezes\n
+            Valor de cada parcela: R$ ${totalParcelas.toFixed(2)}`)
+        } else {
+            alert(`O valor da compra: R$ ${valorTotalCompra.toFixed(2)}\n 
+            Não é possivel parcelar`)
+        }
+        f
+    </script>
+</body>
+</html>
