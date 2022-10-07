@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questao 3</title>
+</head>
+<body>
+    <script>
+        let valorTotalCompra = Number(prompt('Informe o valor total da compra: '))
+        
+        let parcelas = 6;
+        let totalParcelas = valorTotalCompra / parcelas;
+        let valorRedondo = Math.floor(totalParcelas*100)/100;
+        
+        while(true){
+            if(valorRedondo * parcelas != valorTotalCompra){
+                totalParcelas = 0;
+                parcelas--;
+                totalParcelas = valorTotalCompra / parcelas;
+            } if(parcelas == 0){
+                alert(`Parcelamento em ate 6x precisa atender o requisito de parcelas de no minimo 20 reais!`)
+                break;
+            } if(valorRedondo <= 20){
+                alert(`A quantidade de parcelas será de ${parcelas}x.\n
+                O valor de cada parcela será: R$ ${totalParcelas.toFixed(2)}`)
+                break;
+            } 
+        }
+        
+
+    </script>
+</body>
+</html>

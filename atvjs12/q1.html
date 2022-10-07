@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 1</title>
+</head>
+<body>
+    <script>
+        let listaValores = []
+        let diferenca = 0
+
+        let contador = 0
+        while(contador < 10){
+            let valores = Number(prompt('Informe 10 valores: '))
+            if(valores >= 10 && valores <= 20){
+                listaValores.push(valores)
+            }
+            diferenca = 10 - listaValores.length
+            contador++
+        }
+        alert(`Os 10 valores inseridos que estão entre 10 e 20 são: ${listaValores.length}
+        \nOs que estão fora são: ${diferenca}`)
+    </script>
+</body>
+</html>

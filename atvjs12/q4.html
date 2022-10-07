@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questao 4</title>
+</head>
+<body>
+    <script>
+        let primeiraCopa = 1930;
+        let anosInseridos = [];
+        let anosCopa = [];
+        let anoSemCopa = [];
+        let cont;
+        let calcAuxiliar;
+
+        while(true){
+            let anoPrompt = Number(prompt("Informe os anos que deseja saber se é ano de Copa do Mundo (Para finalizar digite 0): "));
+            if(anoPrompt != 0 && anoPrompt != 1942 && anoPrompt != 1946){
+                anosInseridos.push(anoPrompt);
+            }
+            if(anoPrompt == 0){
+                break;
+            }
+        }
+
+        anosInseridos.forEach(ano => {
+            calcAuxiliar = ano;
+            if(ano == primeiraCopa){
+                anosCopa.push(ano);
+
+            }else if(ano > 1930){
+                while(true){
+                    calcAuxiliar = calcAuxiliar - 4;
+                    
+                    if(calcAuxiliar > 1930){
+                        calcAuxiliar = calcAuxiliar - 4;
+                    }
+                    
+                    if(calcAuxiliar == 1930){
+                        anosCopa.push(ano);
+                        break;
+                    }
+                    
+                    if(calcAuxiliar < 1930){
+                        anoSemCopa.push(ano);
+                        break;
+                    }
+                }
+            }else{
+                anoSemCopa.push(ano);
+            }
+        });
+        alert(`ANOS COPA DO MUNDO:  ${anosCopa.join()}\nANOS SEM COPA DO MUNDO:  ${anoSemCopa}`);
+    </script>
+</body>
+</html>

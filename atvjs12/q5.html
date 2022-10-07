@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5</title>
+</head>
+<body>
+    <script>
+
+        let valorTotal = Number(prompt("Informe o valor total da conta R$: "));
+        let parcelas = Number(prompt("Inoforme quantas vezes deseja parcelar (em boletos ou carnê): "));
+        
+        let somaCentavos = 0;
+        let valorParcela = valorTotal / parcelas;
+        let valorINT;
+        let listaParcelas = [];
+        
+        function extrairDecimal(valor){
+            let decimal = valor * 10 % 10 / 10; 
+            return decimal;
+        }
+
+        let totalCentavos = extrairDecimal(valorParcela) * parcelas;
+        
+        for(let i = 1; i <= parcelas; i++){
+
+            if(i != parcelas){
+                valorINT = Math.floor(valorParcela);
+                listaParcelas.push(valorINT);
+            }else{
+                valorINT = Math.floor(valorParcela) + totalCentavos;
+                listaParcelas.push(valorINT);
+            }
+
+        }
+        alert(`O parcelamento escolhido é de ${parcelas}x\nO valor das primeiras ${parcelas-1} parcelas será de R$ ${listaParcelas[0].toFixed(2)}.
+        \nO valor da última parcela será de R$ ${listaParcelas[listaParcelas.length - 1].toFixed(2)}, pois os centavos das primeiras parcelas estão sendo somados nesta ultima.`)
+    </script>
+</body>
+</html>

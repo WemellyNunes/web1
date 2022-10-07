@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+</head>
+<body>
+    <script>
+
+        let valor = Number(prompt("Informe um valor para saber se ele é perfeito ou não: "));
+
+        let Divisores = [];
+        let somaDivisores = 0;
+
+        for (let i = 0; i < valor; i++) {
+            if (valor % i == 0) {
+                Divisores.push(i);
+            }
+        }
+        Divisores.push(valor);
+        Divisores.pop()
+        
+        for (let i = 0; i < Divisores.length; i++) {
+            somaDivisores += Divisores[i];
+        }
+        if(somaDivisores != valor){
+            alert(`O valor informado NÃO É PERFEITO!\n
+                Seus divisores: ${Divisores}\n
+                A soma dos divisores: ${somaDivisores}\n`)
+        }else{
+            alert(`O valor informado é PERFEITO!\n
+                Seus divisores: ${Divisores}\n
+                A soma dos divisores: ${somaDivisores}\n`)
+        }
+        
+    </script>
+</body>
+</html>
