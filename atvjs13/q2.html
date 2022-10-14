@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao</title>
+</head>
+<body>
+    <script>
+    var A = []
+
+    while (A.length < 10) {
+        let num = Number(prompt("insira um numero:"))
+        A.push(num)
+    }
+
+    var multip = Number(prompt("insira o multiplicador"))
+
+    var M = A.map(function(element) {
+        return element * multip;
+    });
+
+    alert(`lista anterior era ${A} \n
+    depois de multiplicar por ${multip}\n
+    a nova lista gerada foi ${M}`)
+    </script>
+</body>
+</html>

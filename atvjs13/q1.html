@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 1</title>
+</head>
+<body>
+    <script>
+        let quantidadeAlunos = 5
+        let listAlunos = []
+        let listNotas = []
+        let contador = 0
+        let msg = ``
+        
+        while(contador < quantidadeAlunos){
+            let alunos = prompt("Digite o nome do aluno: ")
+            let notas = Number(prompt("Digite a nota do aluno: "))
+
+            listAlunos.push(alunos)
+            listNotas.push(notas)
+            contador++
+        }
+
+        for(let i = 0; i < listAlunos.length; i++){
+            msg +=`O(a) aluno(a) ${listAlunos[i]} possui a nota: ${listNotas[i]}\n`
+        } 
+        alert(msg)
+
+        let somaNotas = listNotas.reduce(
+            (valorAnterior, valorAtual) => valorAnterior + valorAtual, 0
+        );
+
+        let media = somaNotas / listNotas.length
+
+        alert(`A média total das notas dos alunos foi: ${media}`)
+
+    </script>
+</body>
+</html>

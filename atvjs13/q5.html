@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Questao 5</title>
+</head>
+<body>
+    <script>
+    let nomes = []
+    let idades = []
+    var lista = []
+    let preferencial = []
+    let normal = []
+
+    while(true){
+        let nom = prompt("insira o nome do cliente (para finalizar digite fim):")
+        if(nom.toLowerCase() == 'fim'){
+            break
+        }
+        let num = Number(prompt("insira a idade do cliente:"))
+
+        nomes.push(nom)
+        idades.push(num)    
+    }
+    
+    for (let i = 0; i < nomes.length; i++) {
+        lista[i] = {
+            nome: nomes[i],
+            idade: idades[i]
+        }
+    }
+    
+    normal = lista.filter(cliente => cliente.idade < 60)
+
+    preferencial = lista.filter(cliente => cliente.idade >= 60)
+    
+    let filaAtendimento = []
+    preferencial.forEach(atend => {
+        filaAtendimento.push(atend.nome)
+    })
+    normal.forEach(atend => {
+        filaAtendimento.push(atend.nome)
+    })
+
+    alert(`A ordem de atendimento vai ser ${filaAtendimento}`)
+    </script>
+</body>
+</html>

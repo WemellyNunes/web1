@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+</head>
+<body>
+    <script>
+        let listSaque = [];
+
+        while(true){
+            let valorSaque = Number(prompt("Insira o valor do saque (digite 0 para sair): "));
+
+            if(valorSaque == 0){
+                break;
+            }
+
+            let divisor = valorSaque % 10;
+
+            if(divisor == 0){
+                alert("Saque válido!");
+            }else{
+                alert("Saque inválido!");
+            }
+
+            listSaque.push(valorSaque)
+        }
+
+        let saqueValidos = listSaque.filter(a => a % 10 == 0);
+
+        let somaValidos = saqueValidos.reduce(
+            (valorAnterior, valorAtual) => valorAnterior + valorAtual, 0
+        );
+
+        alert(`Saques válidos: ${saqueValidos}\nA soma dos saques válidos: ${somaValidos}\n
+        Existe um total de ${listSaque.length - saqueValidos.length} saque(s) inválido(s)!`)
+    </script>
+</body>
+</html>
